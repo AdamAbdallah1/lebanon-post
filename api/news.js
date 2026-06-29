@@ -11,7 +11,7 @@ const FEEDS = {
   lebanon: "https://news.google.com/rss/search?q=lebanon&hl=en&gl=US&ceid=US:en",
   sports: "https://news.google.com/rss/search?q=sports&hl=en&gl=US&ceid=US:en",
   world: "https://news.google.com/rss/search?q=world+news&hl=en&gl=US&ceid=US:en",
-  middleeast: "https://news.google.com/rss/search?q=middle+east+war+gaza+israel+iran&hl=en&gl=US&ceid=US:en"
+  middleeast: "https://news.google.com/rss/search?q=gaza+israel+iran+war&hl=en&gl=US&ceid=US:en"
 };
 
 const extractImage = (item) => {
