@@ -1,12 +1,9 @@
 const categories = [
-  { key: "top", label: "آخر الأخبار" },
-  { key: "lebanon", label: "لبنان" },
-  { key: "world", label: "دولي" },
-  { key: "sports", label: "رياضة" },
-  { key: "breaking", label: "عاجل" },
-  { key: "economy", label: "اقتصاد" },
-  { key: "tech", label: "تكنولوجيا" },
-  { key: "wrongnews", label: "خبر كاذب" },
+  { key: "top", label: "Top" },
+  { key: "lebanon", label: "Lebanon" },
+  { key: "world", label: "World" },
+  { key: "sports", label: "Sports" },
+  { key: "middleeast", label: "Middle East" }
 ];
 
 function CategoryFilter({ category, setCategory }) {

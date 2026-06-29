@@ -11,14 +11,14 @@ function useNews(category) {
         setLoading(true);
         setError(null);
 
-        const res = await fetch(
-          `https://adamabdallah1.github.io/lebanon-post/news?category=${category}`
-        );
+        const res = await fetch(`/api/news?category=${category}`);
 
         const data = await res.json();
 
         setNews(Array.isArray(data) ? data : []);
+
       } catch (err) {
+        console.log(err);
         setError("Failed to load news");
       } finally {
         setLoading(false);
