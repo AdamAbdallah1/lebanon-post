@@ -12,7 +12,7 @@ function useNews(category) {
         setError(null);
 
         const res = await fetch(
-          `http://localhost:3001/news?category=${category}`
+          `https://adamabdallah1.github.io/lebanon-post/news?category=${category}`
         );
 
         const data = await res.json();
