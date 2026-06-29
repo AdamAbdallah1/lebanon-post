@@ -3,14 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "adamabdallah1.github.io/lebanon-post",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.1",
@@ -23,6 +21,7 @@
     "rss-parser": "^3.13.0",
     "tailwindcss": "^4.3.1",
     "undici": "^8.5.0",
+    "vercel": "^54.18.2",
     "xml2js": "^0.6.2"
   },
   "devDependencies": {

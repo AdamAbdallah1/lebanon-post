@@ -43,9 +43,18 @@ export default async function handler(req, res) {
       image_url: extractImage(item)
     }));
 
-    res.status(200).json(result);
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "GET");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+    return res.status(200).json(result);
+
   } catch (err) {
-    res.status(500).json({
+
+    // also allow CORS on errors
+    res.setHeader("Access-Control-Allow-Origin", "*");
+
+    return res.status(500).json({
       error: "RSS failed",
       message: err.message
     });

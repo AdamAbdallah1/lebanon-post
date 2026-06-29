@@ -9,7 +9,7 @@ import { LanguageProvider } from "./context/LanguageContext";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter basename="/lebanon-post">
+    <BrowserRouter>
       <LanguageProvider>
         <ThemeProvider>
           <App />
